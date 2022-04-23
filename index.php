@@ -19,3 +19,4 @@ get_header();
 get_template_part('front-page', 'front-page');
 get_footer();
 ?>
+<p>Are we good?</p>
