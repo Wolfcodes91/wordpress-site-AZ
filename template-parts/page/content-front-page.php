@@ -51,7 +51,7 @@
 					);
 					?>
 			</div><!-- .entry-content -->
-
+					
 		</div><!-- .wrap -->
 	</div><!-- .panel-content -->
 

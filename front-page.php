@@ -41,7 +41,7 @@
     <!-- Preloader End -->
 
 <div class="page_wrapper">
-		<?php get_template_part('template-parts/navigation/nav', 'top'); ?>
+
 		<?php get_header(); ?>
 
 		    <!-- About Starts -->
@@ -320,7 +320,7 @@
 									/>
 									<input 
 										id="mc-embedded-subscribe" 
-										class="button" 
+										class="button" 	
 										name="subscribe" 
 										type="submit" 
 										value="Enter" 
