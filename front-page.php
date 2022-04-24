@@ -229,152 +229,42 @@
 			</div>
 		</div>
 			<!-- Instagram ends -->
-			<!-- Footer section starts -->
-		<div id="preorder_wrap" class="footer_section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="section_title">
-							<h2>Order today</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<!-- <div class="col-md-3 col-6"><br />
-						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/images/partner_1.png" alt="Image">
-						</div>
-						<br />
-					</div> -->
-					<div class="offset-md-3 col-md-3 col-6">
-						<div class="partner-img">
-							<a 
-								href="http://bit.ly/JourneyANovel" 
-								target="_blank" 
-								rel="noopener">
-								<img src="wp-content/themes/twentyseventeen/assets/images/partner_2.png" alt="Order Journey: A Novel from Amazon.com" />
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-							<a 
-								href="https://www.barnesandnoble.com/w/journey-andrew-zimmerman/1136411978?ean=9781635766646" 
-								target="_blank" 
-								rel="noopener">
-								<img src="wp-content/themes/twentyseventeen/assets/images/partner_3.png" alt="Order Journey: A Novel from Barnes and Nobles" />
-							</a>
-						</div>
-					</div>
-
-					<!-- <div class="col-md-3 col-6"><br />
-						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_4.png" alt="Image">
-						</div>
-						<br />
-					</div> -->
-					<!-- <br /> -->
-
-					<!-- <div class="col-md-3 col-6">
-						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_5.png" alt="Image">
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_6.png" alt="Image">
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_7.png" alt="Image">
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_8.png" alt="Image">
-						</div>
-					</div> -->
-				</div>
-				<div class="row">
-					<div class="col-md-10 offset-md-1">
-						<div id="mc_embed_signup" class="newsletter_wrap">
-							<h4>Receive Updates</h4>
-							<form 
-								id="mc-embedded-subscribe-form" 
-								class="validate" action="https://gmail.us4.list-manage.com/subscribe/post?u=17a02fcd3a63863c32df848ef&amp;id=da20ae30f5" 
-								method="post" 
-								name="mc-embedded-subscribe-form" 
-								novalidate="" target="_blank">
-								<div id="mc_embed_signup_scroll" 
-								class="newsletter_form">
-									<p>
-									<input 
-										id="mce-EMAIL" 
-										class="email" 
-										name="EMAIL" 
-										required="" 
-										type="email" 
-										value="" 
-										placeholder="email address" 
-									/>
-									<input 
-										id="mc-embedded-subscribe" 
-										class="button" 	
-										name="subscribe" 
-										type="submit" 
-										value="Enter" 
-									/>
-									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-									</p>
-									<div 
-									style="position: absolute; left: -5000px;" aria-hidden="true">
-									<input tabindex="-1" name="b_17a02fcd3a63863c32df848ef_da20ae30f5" type="text" value="" />
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<?php get_footer(); ?>
-			</div>
-		</div>
-		</main><!-- #main -->
-		</div><!-- #primary -->
+		
+			<?php get_footer(); ?>
 
 		<?php
 		// Show the selected front page content.
-		if (have_posts()) :
-			while (have_posts()) :
-				the_post();
-				get_template_part('template-parts/page/content', 'front-page');
-			endwhile;
-		else :
-			get_template_part('template-parts/post/content', 'none');
-		endif;
+		// if (have_posts()) :
+		// 	while (have_posts()) :
+		// 		the_post();
+		// 		get_template_part('template-parts/page/content', 'front-page');
+		// 	endwhile;
+		// else :
+		// 	get_template_part('template-parts/post/content', 'none');
+		// endif;
 		?>
 
 		<?php
-		// Get each of our panels and show the post data.
-		if (0 !== twentyseventeen_panel_count() || is_customize_preview()) : // If we have pages to show.
+		// // Get each of our panels and show the post data.
+		// if (0 !== twentyseventeen_panel_count() || is_customize_preview()) : // If we have pages to show.
 
-			/**
-			 * Filters the number of front page sections in Twenty Seventeen.
-			 *
-			 * @since Twenty Seventeen 1.0
-			 *
-			 * @param int $num_sections Number of front page sections.
-			 */
-			$num_sections = apply_filters('twentyseventeen_front_page_sections', 4);
-			global $twentyseventeencounter;
+		// 	/**
+		// 	 * Filters the number of front page sections in Twenty Seventeen.
+		// 	 *
+		// 	 * @since Twenty Seventeen 1.0
+		// 	 *
+		// 	 * @param int $num_sections Number of front page sections.
+		// 	 */
+		// 	$num_sections = apply_filters('twentyseventeen_front_page_sections', 4);
+		// 	global $twentyseventeencounter;
 
-			// Create a setting and control for each of the sections available in the theme.
-			for ($i = 1; $i < (1 + $num_sections); $i++) {
-				$twentyseventeencounter = $i;
-				twentyseventeen_front_page_section(null, $i);
-			}
+		// 	// Create a setting and control for each of the sections available in the theme.
+		// 	for ($i = 1; $i < (1 + $num_sections); $i++) {
+		// 		$twentyseventeencounter = $i;
+		// 		twentyseventeen_front_page_section(null, $i);
+		// 	}
 
-		endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here.
+		// endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here.
 		?>
 
 

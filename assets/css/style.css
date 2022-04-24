@@ -1,4 +1,4 @@
-/*
+/* 
 Theme Name: Twenty Seventeen
 Theme URI: https://wordpress.org/themes/twentyseventeen/
 Author: the WordPress team
@@ -23,17 +23,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @font-face {
     font-family: "SweetSans Bold";
-    src: url("assets/fonts/SweetSans-Bold.otf") format("opentype");
+    src: url("/wp-content/themes/twentyseventeen/assets/fonts/SweetSans-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "SweetSans light";
-    src: url("assets/fonts/SweetSans-Light.otf") format("opentype");
+    src: url("/wp-content/themes/twentyseventeen/assets/fonts/SweetSans-Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: SweetSans SemiBold;
-    src: url("assets/fonts/SweetSans-Medium.otf") format("opentype");
+    src: url("/wp-content/themes/twentyseventeen/assets/fonts/SweetSans-Medium.otf") format("opentype");
 }
 
 :focus,
@@ -701,14 +701,14 @@ Header bar area Start
 
 .hero_top_section {
     background: #E499A0;
-    background-image: url('../twentyseventeen/assets/images/hero_bg_top.jpeg');
+    background-image: url('/wp-content/themes/twentyseventeen/assets/images/hero_bg_top.jpeg');
     background-size: cover;
     padding-top: 130px;
 }
 
 .hero_bottom_section {
     background: #D95127;
-    background-image: url('../twentyseventeen/assets/images/hero_bg_bottom.jpeg');
+    background-image: url('/wp-content/themes/twentyseventeen/assets/images/hero_bg_bottom.jpeg');
     background-size: cover;
 }
 .hero_content{
