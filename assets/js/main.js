@@ -41,7 +41,7 @@
 
 
 
-    // Smoot Scroll Effect
+    // Smooth Scroll Effect
     $('.main-menu li a').bind('click', function(event) {
         var $anchor = $(this);
         var headerH = '88';
@@ -52,7 +52,7 @@
     });
 
 
-    // Smoot Scroll Effect
+    // Smooth Scroll Effect
     $('.ofcavas-menu ul li a').bind('click', function(event) {
         var $anchor = $(this);
         var headerH = '88';
@@ -114,25 +114,19 @@
     })
 
 
-
-	
-		
-		
-		
-		
-			/*$(this).toggle(
-			function(){
-			//$('body, html').addClass('stop-scrolling');
-			//$('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
-			alert("bir");
-			},
-			function(){
-			//$('body, html').addClass('stop-scrolling');
-			//$('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
-			alert("iki");
-			};	
+    $(this).toggle(
+    function(){
+    $('body, html').addClass('stop-scrolling');
+    $('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
+    alert("bir");
+    },
+    function(){
+    $('body, html').addClass('stop-scrolling');
+    $('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
+    alert("iki");
+    });	
 								   
-			);*/
+			
 		
 	 
 

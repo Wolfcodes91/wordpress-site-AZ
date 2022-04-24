@@ -159,14 +159,12 @@
 								)
 							);
 						?>
-					</nav><!-- .social-navigation -->
+					</nav>
 					<?php
 				endif;
 
 				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
-<?php wp_footer(); ?>
 
-</body>
-</html>
+
 

@@ -34,8 +34,9 @@ function enqueue_my_custom_styles() {
 	wp_enqueue_style( 'responsive-css', get_theme_file_uri( '/assets/css/responsive.css' ), false );
 	wp_enqueue_script( 'jqueryjs', get_theme_file_uri( '/assets/js/jquery-3.4.1.min.js' ), false );
 	wp_enqueue_script( 'jqueryeasingjs', get_theme_file_uri( '/assets/js/jquery.easing.min.js' ), false );
-	wp_enqueue_script( 'popperjs', get_theme_file_uri( '/assets/js/Popper.js' ), false );
+	wp_enqueue_script( 'jqueryscrolltojs', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), false );
 	wp_enqueue_script( 'bootstrapjs', get_theme_file_uri( '/assets/js/bootstrap.min.js' ), false );
+	wp_enqueue_script( 'popperjs', get_theme_file_uri( '/assets/js/Popper.js' ), false );
 	wp_enqueue_script( 'mainjs', get_theme_file_uri( '/assets/js/main.js' ), false );
 
 }

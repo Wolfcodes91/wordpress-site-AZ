@@ -1,5 +1,5 @@
  <!-- Header bar area Start -->
- <div class="header-bar-area position-fixed w-100">
+  <div class="header-bar-area position-fixed w-100">
      <div class="container-fluid">
          <div class="row align-items-center">
              <div class="col-lg-3">

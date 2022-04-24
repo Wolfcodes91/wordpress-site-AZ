@@ -14,36 +14,7 @@
  */
 ?>
 
-  <!-- Preloader Start -->
-  <div class="proloader" style="display: none;">
-        <div class="loader_34">
-            <!-- Preloader Elements -->
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <!-- Preloader Container Left Begin -->
-                        <div class="ytp-spinner-left">
-                            <!-- Preloader Body Left -->
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <!-- Preloader Container Left End -->
-                        <!-- Preloader Container Right Begin -->
-                        <div class="ytp-spinner-right">
-                            <!-- Preloader Body Right -->
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <!-- Preloader Container Right End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Preloader End -->
-
-<div class="page_wrapper">
-
 		<?php get_header(); ?>
-
 		    <!-- About Starts -->
 		<div id="about-wrap" class="about_section">
 			<div class="container">
@@ -229,7 +200,6 @@
 			</div>
 		</div>
 			<!-- Instagram ends -->
-		
 			<?php get_footer(); ?>
 
 		<?php
