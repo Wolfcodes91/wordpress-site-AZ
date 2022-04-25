@@ -34,7 +34,7 @@
 								Avalon. Paul meets a beautiful soul reader, Christine, who reads his soul and plants the
 								seeds that turn his life upside down.
 							</p>
-							<div id="collapseExample" class="collapse show">
+							<div id="collapseExample" class="collapse">
 								<p>
 									When he returns to New York, his wife, Mary, is skeptical. Is Paul having a spiritual
 									awakening or is he falling in love with an attractive charlatan? His journey both scares

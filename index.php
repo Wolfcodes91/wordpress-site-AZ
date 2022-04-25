@@ -32,10 +32,11 @@
 		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 	</style>
+    
 </head>
 <body>
  <!-- Preloader Start -->
- <div class="proloader" style="display: none;">
+ <div class="proloader">
         <div class="loader_34">
             <!-- Preloader Elements -->
             <div class="ytp-spinner">
@@ -67,4 +68,5 @@ get_template_part('front-page', 'front-page');
 get_footer();
 ?>
 </body>
+
 </html>

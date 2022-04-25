@@ -1,10 +1,10 @@
-(function($) {
+$(document).ready(function() {
     "use strict";
 
-    //===== Prealoder
-    $(window).on('load', function(event) {
+    //===== Preloader
+    // $(window).on('load', function(event) {
         $('.proloader').delay(500).fadeOut(500);
-    });
+    // });
 
 
     // sticky
@@ -113,18 +113,17 @@
         $(this).fadeOut();
     })
 
-
-    $(this).toggle(
-    function(){
-    $('body, html').addClass('stop-scrolling');
-    $('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
-    alert("bir");
-    },
-    function(){
-    $('body, html').addClass('stop-scrolling');
-    $('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
-    alert("iki");
-    });	
+    // $(this).toggle(
+    // function(){
+    // $('body, html').addClass('stop-scrolling');
+    // $('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
+    // alert("bir");
+    // },
+    // function(){
+    // $('body, html').addClass('stop-scrolling');
+    // $('body, html').bind('touchmove', function(e){e.preventDefault(),$(this).addClass('stop-scrolling')});
+    // alert("iki");
+    // });	
 								   
 			
 		
@@ -159,4 +158,5 @@
 //     });	
 
 // });
-})(jQuery);
+})
+// (jQuery);
