@@ -9,6 +9,16 @@
  * @since Twenty Seventeen 1.0
  */
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+	// acf_add_options_sub_page('header');
+	
+	// acf_add_options_sub_page('footer');
+	
+}
+
 /**
  * Twenty Seventeen only works in WordPress 4.7 or later.
  */

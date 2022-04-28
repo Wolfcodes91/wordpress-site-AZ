@@ -11,7 +11,7 @@
  * @since Twenty Seventeen 1.0
  * @version 1.2
  */
-
+$optionsfields = the_field('footer', 'option');
 ?>
 	<!-- Footer section starts -->
 	<div id="preorder_wrap" class="footer_section">
@@ -84,7 +84,8 @@
 					<div class="col-md-10 offset-md-1">
 						<div id="mc_embed_signup" class="newsletter_wrap">
 							<h4>Receive Updates</h4>
-							<form 
+							<?= do_shortcode('[contact-form-7 id="44" title="Contact form 1"]'); ?>
+							<!-- <form 
 								id="mc-embedded-subscribe-form" 
 								class="validate" action="https://gmail.us4.list-manage.com/subscribe/post?u=17a02fcd3a63863c32df848ef&amp;id=da20ae30f5" 
 								method="post" 
@@ -109,14 +110,14 @@
 										type="submit" 
 										value="Enter" 
 									/>
-									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									real people should not fill this in and expect good things - do not remove this or risk form bot signups
 									</p>
 									<div 
 									style="position: absolute; left: -5000px;" aria-hidden="true">
 									<input tabindex="-1" name="b_17a02fcd3a63863c32df848ef_da20ae30f5" type="text" value="" />
 									</div>
 								</div>
-							</form>
+							</form> -->
 						</div>
 						<!--End mc_embed_signup-->
 					</div>
@@ -126,7 +127,8 @@
 		<div class="row align-items-center">
 			<div class="col-md-6 xs-center order-last order-md-first">
 				<div class="copyright_text">
-					<p>© 2020 Andrew Zimmerman</p>
+					<?= $optionsfields ?>
+					<!-- <p>© 2020 Andrew Zimmerman</p> -->
 				</div>
 			</div>
 			<!-- <div class="col-md-6 xs-center">

@@ -12,9 +12,14 @@
  * @since Twenty Seventeen 1.0
  * @version 1.0
  */
+get_header();
+$fields = get_fields();
+$about_the_book = $fields['about_the_book'];
+$about_the_book_dropdown = $fields['about_the_book_dropdown'];
+$about_the_author = $fields['about_the_author'];
+$about_the_author_dropdown = $fields['about_the_author_dropdown'];
 ?>
-
-		<?php get_header(); ?>
+		
 		    <!-- About Starts -->
 		<div id="about-wrap" class="about_section">
 			<div class="container">
@@ -22,7 +27,8 @@
 					<div class="col-lg-6 col-md-6">
 						<div class="about_text">
 							<h3>ABOUT THE BOOK</h3>
-							<p>
+							<?= $about_the_book ?>
+							<!-- <p>
 								Paul is a top business executive hoping to be the next CEO of Ascendant―a New York-based tech
 								giant. He neglects everything―his family and himself―in the race to the top. His fast-paced
 								life is interrupted when he travels to Glastonbury, England, to visit friends in a village
@@ -33,16 +39,17 @@
 								him, he is attracted to the energy of a nearby hill―Tor―said to be the mythical Isle of
 								Avalon. Paul meets a beautiful soul reader, Christine, who reads his soul and plants the
 								seeds that turn his life upside down.
-							</p>
+							</p> -->
 							<div id="collapseExample" class="collapse">
-								<p>
+							<?= $about_the_book_dropdown ?>
+								<!-- <p>
 									When he returns to New York, his wife, Mary, is skeptical. Is Paul having a spiritual
 									awakening or is he falling in love with an attractive charlatan? His journey both scares
 									and intrigues her as she watches him struggle to navigate between the business and
 									spiritual worlds. A series of synchronistic events draws Paul closer to Glastonbury and
 									Christine, compelling him and a reluctant Mary to return, unaware that their lives will
 									never be the same.
-								</p>
+								</p> -->
 							</div>
 							<a href="#" class="read_more" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">+read more</a>
 						</div>
@@ -64,10 +71,12 @@
 					<div class="col-lg-6 offset-lg-1 col-md-7">
 						<div class="author_bio">
 							<h3>About The author</h3>
-							<p>ANDY ZIMMERMAN is the president of frog, a global leader in design and strategy. The first in a trilogy, Journey is Zimmerman’s first novel.</p>
-							<p>He has been a senior executive in the technology industry, always on the leading edge of innovation.</p>
+							<?= $about_the_author ?>
+							<!-- <p>ANDY ZIMMERMAN is the president of frog, a global leader in design and strategy. The first in a trilogy, Journey is Zimmerman’s first novel.</p>
+							<p>He has been a senior executive in the technology industry, always on the leading edge of innovation.</p> -->
 							<div id="collapseBio" class="collapse">
-								<p>Business career highlights include the following:</p>
+							<?= $about_the_author_dropdown ?>
+								<!-- <p>Business career highlights include the following:</p>
 								<ul>
 									<li>
 										<p>• Part of the team that launched one of the first home video businesses in the 1980s.</p>
@@ -95,7 +104,7 @@
 								</ul>
 								<p>Andy was an English major at Haverford College and was one of the youngest recipients of a post-grad Thomas Watson Fellowship, 
 									during which he travelled with circuses in Europe, writing about the experience.</p>
-								<p>He also received a master’s degree from New York University Business School.</p>
+								<p>He also received a master’s degree from New York University Business School.</p> -->
 							</div>
 							<a class="read_more" href="#" data-toggle="collapse" data-target="#collapseBio" aria-expanded="false" aria-controls="collapseBio">+read more</a>
 						</div>
