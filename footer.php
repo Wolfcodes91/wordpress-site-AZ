@@ -17,7 +17,16 @@
 	<div id="preorder_wrap" class="footer_section">
 			<div class="container">
 				<?php 
-				if ( get_field('shop1', 'option')): 
+				if ( 
+					get_field('shop1', 'option') || 
+					get_field('shop2', 'option') ||
+					get_field('shop3', 'option') ||
+					get_field('shop4', 'option') ||
+					get_field('shop5', 'option') ||
+					get_field('shop6', 'option') ||
+					get_field('shop7', 'option') ||
+					get_field('shop8', 'option')
+				): 
 				echo '<div class="row">
 						<div class="col-md-12">
 							<div class="section_title">
