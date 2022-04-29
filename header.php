@@ -67,6 +67,7 @@
             </div>
         	</div>
         </div>
+
     </div>
     <!-- Hero area End -->
 

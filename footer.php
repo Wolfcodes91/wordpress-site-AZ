@@ -11,7 +11,7 @@
  * @since Twenty Seventeen 1.0
  * @version 1.2
  */
-$optionsfields = the_field('footer', 'option');
+
 ?>
 	<!-- Footer section starts -->
 	<div id="preorder_wrap" class="footer_section">
@@ -24,61 +24,65 @@ $optionsfields = the_field('footer', 'option');
 					</div>
 				</div>
 				<div class="row">
-					<!-- <div class="col-md-3 col-6"><br />
+					<div class="col-md-3 col-6">
 						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/images/partner_1.png" alt="Image">
+						<?= the_field('shop1', 'option'); ?>
+							<!-- <img src="wp-content/themes/twentyseventeen/assets/images/partner_1.png" alt="Image"> -->
 						</div>
-						<br />
-					</div> -->
-					<div class="offset-md-3 col-md-3 col-6">
+					</div>
+					<div class="col-md-3 col-6">
 						<div class="partner-img">
-							<a 
+						<?= the_field('shop2', 'option'); ?>
+							<!-- <a 
 								href="http://bit.ly/JourneyANovel" 
 								target="_blank" 
 								rel="noopener">
 								<img src="wp-content/themes/twentyseventeen/assets/images/partner_2.png" alt="Order Journey: A Novel from Amazon.com" />
-							</a>
+							</a> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
-							<a 
+						<?= the_field('shop3', 'option'); ?>
+							<!-- <a 
 								href="https://www.barnesandnoble.com/w/journey-andrew-zimmerman/1136411978?ean=9781635766646" 
 								target="_blank" 
 								rel="noopener">
 								<img src="wp-content/themes/twentyseventeen/assets/images/partner_3.png" alt="Order Journey: A Novel from Barnes and Nobles" />
-							</a>
+							</a> -->
 						</div>
 					</div>
 
-					<!-- <div class="col-md-3 col-6"><br />
+					<div class="col-md-3 col-6">
 						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_4.png" alt="Image">
-						</div>
-						<br />
-					</div> -->
-					<!-- <br /> -->
-
-					<!-- <div class="col-md-3 col-6">
-						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_5.png" alt="Image">
+						<?= the_field('shop4', 'option'); ?>
+							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_4.png" alt="Image"> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_6.png" alt="Image">
+						<?= the_field('shop5', 'option'); ?>
+							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_5.png" alt="Image"> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_7.png" alt="Image">
+						<?= the_field('shop6', 'option'); ?>
+							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_6.png" alt="Image"> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
-							<img src="wp-content/themes/twentyseventeen/assets/img/partner_8.png" alt="Image">
+						<?= the_field('shop7', 'option'); ?>
+							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_7.png" alt="Image"> -->
 						</div>
-					</div> -->
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="partner-img">
+						<?= the_field('shop8', 'option'); ?>
+							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_8.png" alt="Image"> -->
+						</div>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
@@ -127,7 +131,8 @@ $optionsfields = the_field('footer', 'option');
 		<div class="row align-items-center">
 			<div class="col-md-6 xs-center order-last order-md-first">
 				<div class="copyright_text">
-					<?= $optionsfields ?>
+				<?= the_field('footer', 'option'); ?>
+
 					<!-- <p>© 2020 Andrew Zimmerman</p> -->
 				</div>
 			</div>
@@ -141,6 +146,7 @@ $optionsfields = the_field('footer', 'option');
 				</div>
 			</div> -->
         </div>
+
     </div>
 </div>
     <!-- Footer section ends -->

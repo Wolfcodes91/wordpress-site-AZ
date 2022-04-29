@@ -62,10 +62,10 @@
     <!-- Preloader End -->
     <div class="page_wrapper">
 <?php
-get_template_part('template-parts/navigation/nav', 'top');
-get_header(); 
-get_template_part('front-page', 'front-page');
-get_footer();
+// get_template_part('template-parts/navigation/nav', 'top');
+// get_header(); 
+// get_template_part('front-page', 'front-page');
+// get_footer();
 ?>
 </body>
 
