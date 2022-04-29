@@ -9,15 +9,28 @@
              </div>
              <div class="col-lg-9 text-right">
                  <ul id="mainNav" class="main-menu pb-2 pb-lg-0">
-                     <li class="nav-item">
-                         <a class="nav-link js-scroll-trigger" href="#about-wrap">About</a>
-                     </li>
-                     <!-- <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#press_wrap">Press</a>
-                            </li> -->
-                     <li class="nav-item">
-                         <a class="nav-link js-scroll-trigger" href="#preorder_wrap"> Order</a>
-                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about-wrap">About</a>
+                    </li>
+                            <!-- <li class="nav-item"> -->
+                                <!-- <a class="nav-link js-scroll-trigger" href="#press_wrap">Press</a>
+                            </li> --> 
+                <?php 
+				if ( 
+					get_field('shop1', 'option') || 
+					get_field('shop2', 'option') ||
+					get_field('shop3', 'option') ||
+					get_field('shop4', 'option') ||
+					get_field('shop5', 'option') ||
+					get_field('shop6', 'option') ||
+					get_field('shop7', 'option') ||
+					get_field('shop8', 'option')
+				): 
+                echo '<li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#preorder_wrap"> Order</a>
+                </li>';
+                endif;
+                ?>
                  </ul>
                  <div class="hamburger-menu">
                      <span class="line-top"></span>
