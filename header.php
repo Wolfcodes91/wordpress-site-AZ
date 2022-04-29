@@ -27,11 +27,12 @@
 						</div>
 						<div class="col-lg-6 offset-lg-1 col-md-6 offset-md-1 order-lg-2 order-md-2 order-1">
 							<div class="hero_content">
-								<h1>Journey: A Novel</h1>
+							<?= the_field('header', 'option'); ?>
+								<!-- <h1>Journey: A Novel</h1>
 								<p>Inspired by real events.</p>
 								<p>This genre-bending,</p>
 								<p>consciousness expanding</p>
-								<p>debut novel by Andrew Zimmerman.</p>
+								<p>debut novel by Andrew Zimmerman.</p> -->
 								<div class="purchase_btn">
 									<p>Available Now.</p>
 									<a class="js-scroll-trigger" href="#preorder_wrap"> Order</a><!-- <a href="#">Pre-order</a> -->	

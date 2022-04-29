@@ -16,13 +16,17 @@
 	<!-- Footer section starts -->
 	<div id="preorder_wrap" class="footer_section">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="section_title">
-							<h2>Order today</h2>
+				<?php 
+				if ( get_field('shop1', 'option')): 
+				echo '<div class="row">
+						<div class="col-md-12">
+							<div class="section_title">
+								<h2>Order today</h2>
+							</div>
 						</div>
-					</div>
-				</div>
+					</div>';
+				endif;
+				?>
 				<div class="row">
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
@@ -56,31 +60,26 @@
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
 						<?= the_field('shop4', 'option'); ?>
-							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_4.png" alt="Image"> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
 						<?= the_field('shop5', 'option'); ?>
-							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_5.png" alt="Image"> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
 						<?= the_field('shop6', 'option'); ?>
-							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_6.png" alt="Image"> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
 						<?= the_field('shop7', 'option'); ?>
-							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_7.png" alt="Image"> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
 						<?= the_field('shop8', 'option'); ?>
-							<!-- <img src="wp-content/themes/twentyseventeen/assets/img/partner_8.png" alt="Image"> -->
 						</div>
 					</div>
 				</div>
