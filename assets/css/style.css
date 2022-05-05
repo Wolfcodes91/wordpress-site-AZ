@@ -765,7 +765,7 @@ a:hover {
 .newsletter_wrap.v2{
     text-align: left;
     margin: 0;
-    padding:75px 0 80px 0;
+    padding:70px 0 75px 0;
 }
 .newsletter_wrap.v2 h4,
 .newsletter_wrap.v2 input,
@@ -1015,4 +1015,8 @@ a:hover {
     background-size: contain;
 }
 
-
+#shops-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

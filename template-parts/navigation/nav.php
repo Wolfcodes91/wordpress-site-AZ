@@ -54,7 +54,7 @@
      <ul id="mainNav" class="navbar-nav ml-auto pb-2 pb-lg-0">
      <?php wp_nav_menu( array( 
                 'theme-location' => 'nav', 
-                'container_class' => 'main-menu',
+                'container_class' => 'navbar-nav',
                 ) ); ?>
          <!-- <li class="nav-item" style="margin-top: 20px">
              <a class="nav-link js-scroll-trigger" href="#about-wrap">About</a>

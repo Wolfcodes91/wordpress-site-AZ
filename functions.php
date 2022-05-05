@@ -739,3 +739,8 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
  */
 require get_template_directory() . '/inc/block-patterns.php';
 
+add_shortcode( 'order_button', 'order_button_shortcode' );
+	
+add_theme_support( 'post-thumbnails' );
+	
+set_post_thumbnail_size( 1500, 1500);

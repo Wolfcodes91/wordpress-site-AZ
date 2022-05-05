@@ -11,23 +11,16 @@
  * @since Twenty Seventeen 1.0
  * @version 1.2
  */
-
+$shops = get_field('shops', 'option');
 ?>
 	<!-- Footer section starts -->
 	<div id="preorder_wrap" class="footer_section">
 			<div class="container">
 				<?php 
 				if ( 
-					get_field('shop1', 'option') || 
-					get_field('shop2', 'option') ||
-					get_field('shop3', 'option') ||
-					get_field('shop4', 'option') ||
-					get_field('shop5', 'option') ||
-					get_field('shop6', 'option') ||
-					get_field('shop7', 'option') ||
-					get_field('shop8', 'option')
+					!empty($shops)
 				): 
-				echo '<div class="row">
+				echo '<div class="row">					
 						<div class="col-md-12">
 							<div class="section_title">
 								<h2>Order today</h2>
@@ -36,62 +29,47 @@
 					</div>';
 				endif;
 				?>
-				<div class="row">
+				<div class="row" id="shops-wrap">
+					<?php 
+					foreach ($shops as $shop): 
+					?>
 					<div class="col-md-3 col-6">
 						<div class="partner-img">
-						<?= the_field('shop1', 'option'); ?>
-							<!-- <img src="wp-content/themes/twentyseventeen/assets/images/partner_1.png" alt="Image"> -->
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-						<?= the_field('shop2', 'option'); ?>
-							<!-- <a 
-								href="http://bit.ly/JourneyANovel" 
+						<a 
+								href="<?= $shop['store_link']?>" 
 								target="_blank" 
 								rel="noopener">
-								<img src="wp-content/themes/twentyseventeen/assets/images/partner_2.png" alt="Order Journey: A Novel from Amazon.com" />
-							</a> -->
+								<img src="<?= $shop['store_image']['url']?>" alt="Image">
+							</a>
 						</div>
+						
 					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-						<?= the_field('shop3', 'option'); ?>
-							<!-- <a 
-								href="https://www.barnesandnoble.com/w/journey-andrew-zimmerman/1136411978?ean=9781635766646" 
-								target="_blank" 
-								rel="noopener">
-								<img src="wp-content/themes/twentyseventeen/assets/images/partner_3.png" alt="Order Journey: A Novel from Barnes and Nobles" />
-							</a> -->
-						</div>
-					</div>
-
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-						<?= the_field('shop4', 'option'); ?>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-						<?= the_field('shop5', 'option'); ?>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-						<?= the_field('shop6', 'option'); ?>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-						<?= the_field('shop7', 'option'); ?>
-						</div>
-					</div>
-					<div class="col-md-3 col-6">
-						<div class="partner-img">
-						<?= the_field('shop8', 'option'); ?>
-						</div>
-					</div>
+					<?php endforeach; ?>
 				</div>
+
+					<!-- <div class="col-md-3 col-6">
+						<div class="partner-img">
+					
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="partner-img">
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="partner-img">
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="partner-img">
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="partner-img">
+				
+						</div>
+					</div>
+				</div> -->
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<div id="mc_embed_signup" class="newsletter_wrap">
@@ -140,6 +118,10 @@
 			<div class="col-md-6 xs-center order-last order-md-first">
 				<div class="copyright_text">
 				<?= the_field('footer', 'option'); ?>
+				<?php wp_nav_menu( array( 
+                'theme-location' => 'footer', 
+                'container_class' => 'copyright_text',
+                ) ); ?>
 
 					<!-- <p>© 2020 Andrew Zimmerman</p> -->
 				</div>
