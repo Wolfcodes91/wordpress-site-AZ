@@ -10,6 +10,11 @@
  * @version 1.0
  */
 
+header('Location: /');
+
+exit;
+
+
 get_header(); ?>
 
 <div class="wrap">

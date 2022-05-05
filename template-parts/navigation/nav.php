@@ -8,29 +8,36 @@
                  </a>
              </div>
              <div class="col-lg-9 text-right">
+             <?php wp_nav_menu( array( 
+                'theme-location' => 'nav', 
+                'container_class' => 'main-menu',
+                ) ); ?>
                  <ul id="mainNav" class="main-menu pb-2 pb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about-wrap">About</a>
-                    </li>
+                    </li> -->
                             <!-- <li class="nav-item"> -->
                                 <!-- <a class="nav-link js-scroll-trigger" href="#press_wrap">Press</a>
                             </li> --> 
                 <?php 
-				if ( 
-					get_field('shop1', 'option') || 
-					get_field('shop2', 'option') ||
-					get_field('shop3', 'option') ||
-					get_field('shop4', 'option') ||
-					get_field('shop5', 'option') ||
-					get_field('shop6', 'option') ||
-					get_field('shop7', 'option') ||
-					get_field('shop8', 'option')
-				): 
-                echo '<li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#preorder_wrap"> Order</a>
-                </li>';
-                endif;
+				// if ( 
+				// 	get_field('shop1', 'option') || 
+				// 	get_field('shop2', 'option') ||
+				// 	get_field('shop3', 'option') ||
+				// 	get_field('shop4', 'option') ||
+				// 	get_field('shop5', 'option') ||
+				// 	get_field('shop6', 'option') ||
+				// 	get_field('shop7', 'option') ||
+				// 	get_field('shop8', 'option')
+				// ): 
+                // echo '
+              
+                // ';
+                // endif;
                 ?>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#preorder_wrap"> Order</a>
+                </li> -->
                  </ul>
                  <div class="hamburger-menu">
                      <span class="line-top"></span>
@@ -45,27 +52,34 @@
  <!-- Ofcanvas-menu -->
  <div class="ofcavas-menu">
      <ul id="mainNav" class="navbar-nav ml-auto pb-2 pb-lg-0">
-         <li class="nav-item" style="margin-top: 20px">
+     <?php wp_nav_menu( array( 
+                'theme-location' => 'nav', 
+                'container_class' => 'main-menu',
+                ) ); ?>
+         <!-- <li class="nav-item" style="margin-top: 20px">
              <a class="nav-link js-scroll-trigger" href="#about-wrap">About</a>
-         </li>
+         </li> -->
          <!-- <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#press_wrap">Press</a>
                 </li> -->
-                <?php 
-				if ( 
-					get_field('shop1', 'option') || 
-					get_field('shop2', 'option') ||
-					get_field('shop3', 'option') ||
-					get_field('shop4', 'option') ||
-					get_field('shop5', 'option') ||
-					get_field('shop6', 'option') ||
-					get_field('shop7', 'option') ||
-					get_field('shop8', 'option')
-				): 
-                echo '<li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#preorder_wrap"> Order</a>
-            </li>';
-                endif;
+            </li> -->
+                <?php 
+				// if ( 
+				// 	get_field('shop1', 'option') || 
+				// 	get_field('shop2', 'option') ||
+				// 	get_field('shop3', 'option') ||
+				// 	get_field('shop4', 'option') ||
+				// 	get_field('shop5', 'option') ||
+				// 	get_field('shop6', 'option') ||
+				// 	get_field('shop7', 'option') ||
+				// 	get_field('shop8', 'option')
+				// ): 
+                // echo '
+          
+            // ';
+            //     endif;
                 ?>
      </ul>
  </div>

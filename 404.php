@@ -10,6 +10,10 @@
  * @version 1.0
  */
 
+// header('Location: http://www.andrewzimmermanbooks.com/');
+
+// exit;
+
 get_header(); ?>
 
 <div class="wrap">

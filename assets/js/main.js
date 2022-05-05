@@ -103,6 +103,11 @@ $(document).ready(function() {
         }
     });
 
+    $('.menu-item a').on('click', function () {
+        $('.menu-item a').removeClass('active');
+        $(this).addClass('active');
+    })
+
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',

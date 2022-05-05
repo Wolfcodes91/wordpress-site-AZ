@@ -193,13 +193,13 @@ a:hover {
     display: inline-block;
 }
 
-.main-menu .nav-item {
+.main-menu .menu-item {
     display: inline-block;
     padding: 0 12px;
     position: relative;
 }
 
-.main-menu .nav-item .nav-link {
+.main-menu .menu-item a {
     color: #102331;
     font-size: 20px;
     text-transform: uppercase;
@@ -209,7 +209,7 @@ a:hover {
     line-height: 64px;
 }
 
-.main-menu .nav-item .nav-link.active {
+.main-menu .menu-item a.active {
     font-family: "SweetSans Bold";
 }
 

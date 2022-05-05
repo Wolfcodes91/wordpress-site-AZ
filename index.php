@@ -14,6 +14,7 @@
  * @since Twenty Seventeen 1.0
  * @version 1.0
  */
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">

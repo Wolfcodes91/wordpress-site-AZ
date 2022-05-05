@@ -9,6 +9,31 @@
  * @since Twenty Seventeen 1.0
  */
 
+ add_action('init', function() {
+	 add_rewrite_rule( 'characters.php', 'index.php', 'top');
+ });
+
+
+//  function get_page_templates( $post = , $post_type = 'page' ) {
+//     return array_flip( wp_get_theme()->get_page_templates( $post, $post_type ) );
+// }
+
+
+ add_filter( 'rest_authentication_errors', 'wp_snippet_disable_rest_api' );
+   function wp_snippet_disable_rest_api( $access ) {
+      return new WP_Error( 'rest_disabled', __('The WordPress REST API has been disabled.'), array( 'status' => rest_authorization_required_code()));
+   }
+
+   function wpb_custom_new_menu() {
+	register_nav_menus(
+	  array(
+		'nav' => __( 'Nav Bar' ),
+		'extra-menu' => __( 'Footer' )
+	  )
+	);
+  }
+  add_action( 'init', 'wpb_custom_new_menu' );
+
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page();
@@ -713,3 +738,4 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
  * Block Patterns.
  */
 require get_template_directory() . '/inc/block-patterns.php';
+
