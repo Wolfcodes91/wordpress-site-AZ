@@ -14,6 +14,7 @@ $about_the_book = $fields['about_the_book'];
 $about_the_book_dropdown = $fields['about_the_book_dropdown'];
 $about_the_author = $fields['about_the_author'];
 $about_the_author_dropdown = $fields['about_the_author_dropdown'];
+$dropdown = $fields['dropdown'];
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -28,21 +29,27 @@ $about_the_author_dropdown = $fields['about_the_author_dropdown'];
 			<!-- About 1 -->
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-6">
+					<div class="col-lg-6 col-md-6">	
+					<div class=<?= has_post_thumbnail() ? 'about_text' : 'about_text_centered'?>>
 					<?php the_title( '<h3 class="about_text">', '</h3>' ); ?>
-					<div class="about_text">
 					<?= the_content(); ?>
-						
-					<div id="collapseExample" class="collapse">
-						<?= $about_the_book_dropdown ?>
+					<?php if (!empty($dropdown)) : ?>	
+					<div id="collapseExample" class="collapse">			
+							<?= $dropdown ?>
 					</div>
 					<a href="#" class="read_more" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">+read more</a>
+					<?php endif; ?>
 				</div>
 			</div>
-			<?php the_post_thumbnail(); ?>
+			<div class="col-lg-6 col-md-6">
+				<div class="about_img">
+					<?php the_post_thumbnail(); ?>
 				</div>
+			</div>
 			</div>
 		</div>
-		
-	</div><!-- .entry-content -->
+	</div>		
+</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+

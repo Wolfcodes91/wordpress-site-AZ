@@ -743,7 +743,7 @@ a:hover {
     margin-top: 30px;
 }
 
-.purchase_btn p {
+#purchase_btn {
     font-size: 34px;
     font-family: "SweetSans Light";
     font-weight: 400;
@@ -801,7 +801,12 @@ a:hover {
     line-height: 1.2;
     margin-bottom: 45px;
     color: #102331;
-
+}
+.about_text_centered h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 45px;
+    color: #102331;
 }
 
 .about_text p {
@@ -816,9 +821,26 @@ a:hover {
     color: #102331;
     font-family: "SweetSans Bold";
 }
+.about_text_centered a.read_more {
+    font-size: 20px;
+    color: #102331;
+    font-family: "SweetSans Bold";
+}
 
 .about_img {
     text-align: right;
+}
+
+.about_text_centered {
+    font-size: 19px;
+    color: #102331;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60vmin;
+    line-height: 1.5;
+    margin-left: 100px;
 }
 
 /*--------------------------------
@@ -1020,3 +1042,4 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+

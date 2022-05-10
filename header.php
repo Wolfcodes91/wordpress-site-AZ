@@ -35,14 +35,6 @@ $header_text = $fields['header_text'];
 								<p>This genre-bending,</p>
 								<p>consciousness expanding</p>
 								<p>debut novel by Andrew Zimmerman.</p> -->
-								<?php function order_button_shortcode() {
-     							return 
-								 '<div class="purchase_btn">
-								 <p>Available Now.</p>
-								 <a class="js-scroll-trigger" href="#preorder_wrap"> Order</a><!-- <a href="#">Pre-order</a> -->	
-								 </div>';
-								}
-								?>
 							</div>
 						</div>
 					</div>

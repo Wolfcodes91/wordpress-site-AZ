@@ -739,8 +739,18 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
  */
 require get_template_directory() . '/inc/block-patterns.php';
 
+function order_button_shortcode() {
+	return 
+	'<div class="purchase_btn">
+	<p id="purchase_btn">Available Now.</p>
+	<a class="js-scroll-trigger" href="#preorder_wrap"> Order</a><!-- <a href="#">Pre-order</a> -->	
+	</div>';
+   }
+
+
+
 add_shortcode( 'order_button', 'order_button_shortcode' );
 	
 add_theme_support( 'post-thumbnails' );
 	
-set_post_thumbnail_size( 1500, 1500);
+set_post_thumbnail_size(600, 600, true);

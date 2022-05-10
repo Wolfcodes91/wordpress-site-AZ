@@ -63,7 +63,7 @@ $about_the_author_dropdown = $fields['about_the_author_dropdown'];
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6">
-						<div class="about_img"><img src="wp-content/themes/twentyseventeen/assets/images/book_2.png" alt="Image" /></div>
+						<div class="about_img"><img src="/wp-content/themes/twentyseventeen/assets/images/book_2.png" alt="Image" /></div>
 					</div>
 				</div>
 			</div>
