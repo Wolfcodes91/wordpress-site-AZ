@@ -19,6 +19,7 @@
 
 
 
+get_template_part('index', 'top');
 get_template_part('template-parts/navigation/nav', 'top');
 get_header();
 $fields = get_fields();
@@ -152,71 +153,8 @@ $about_the_author_dropdown = $fields['about_the_author_dropdown'];
 		<!-- Magazine ends -->
 		<!-- Instagram starts -->
 
-		<div class="instagram_section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section_title">
-							<h4>Instagram</h4>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 offset-lg-1 insta_box">
-						<div id="instgram_container" class="row">
-
-							<!-- <div class="col-md-4 col-6">
-								<div class="instagram_img mb-30">
-									<a href="#"><img src="assets/img/img_1.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-								<div class="instagram_img mb-30">
-									<a href="#"><img src="assets/img/img_2.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-								<div class="instagram_img mb-30">
-									<a href="#"><img src="assets/img/img_3.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-								<div class="instagram_img mb-30">
-									<a href="#"><img src="assets/img/img_4.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-								<div class="instagram_img mb-30">
-									<a href="#"><img src="assets/img/img_5.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-
-								<div class="instagram_img mb-30">
-									<a href="#"><img src="assets/img/img_6.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6 ">
-								<div class="instagram_img  xs-30">
-									<a href="#"><img src="assets/img/img_7.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-								<div class="instagram_img">
-									<a href="#"><img src="assets/img/img_8.png" alt="Image"></a>
-								</div>
-							</div>
-							<div class="col-md-4 col-6">
-								<div class="instagram_img">
-									<a href="#"><img src="assets/img/img_9.png" alt="Image"></a>
-								</div>
-							</div> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-			<!-- Instagram ends -->
+	
+		
 			<?php get_footer(); ?>
 
 		<?php

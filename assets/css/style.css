@@ -936,19 +936,22 @@ a:hover {
             Footer CSS
 ---------------------------------*/
 .footer_section {
-    background: #102331;
-    padding: 100px 0 70px;
+    background-color: #102331;
+    /* background: #102331; */
+    padding: 100px 0 200px ;
 }
 
 .section_title h2 {
     font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    /* color: #102331; */
     color: #e5e5e5;
     line-height: 1.2;
 }
 
 .partner-img img {
+    /* filter: grayscale(100%); */
     width: 100%;
     margin-bottom: 30px;
 }
@@ -958,13 +961,16 @@ a:hover {
 }
 
 .newsletter_wrap {
+    /* background-color: #FFFAEE; */
+    color: #102331;
     text-align: center;
     margin: 120px 0;
 }
 
 .newsletter_wrap h4 {
     font-size: 34px;
-    color: #E0E0E0;
+    color: #102331;
+    /* color: #E0E0E0; */
     font-family: "SweetSans Light";
     margin-bottom: 30px;
     line-height: 1.2;
@@ -973,25 +979,30 @@ a:hover {
 .newsletter_form input {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
+    border-bottom: 1px solid #102331;
     width: 44%;
-    color: #e5e5e5;
+    /* color: #e5e5e5;  */
+    color: #102331;
     text-transform: uppercase;
     font-size: 16px;
     padding: 5px 0;
 }
 
 .newsletter_form input::placeholder {
-    color: #e5e5e5;
+    /* color: #e5e5e5; */
+    color: #102331;
 }
 
 .newsletter_form button,
 .newsletter_form input.button {
     font-size: 18px;
     font-family: "SweetSans Bold";
-    color: #e5e5e5;
+    color: #102331;
+    /* color: #e5e5e5; */
     background: transparent;
-    border: 2px solid #e5e5e5;
+    /* border: 2px solid #e5e5e5; */
+    border: 2px solid #102331;
     border-radius: 50px;
     padding: 7px 35px 4px;
     line-height: 1.2;
@@ -1007,15 +1018,16 @@ a:hover {
     }
 }
 
-.copyright_text p {
-
+#copyright_text {
     font-size: 14px;
     color: #e5e5e5;
+    background-color: #102331;
     font-family: "SweetSans Light";
     margin-bottom: 0;
 }
 
 .footer_menu {
+    color: #102331;
     text-align: right;
 }
 
@@ -1038,8 +1050,22 @@ a:hover {
 }
 
 #shops-wrap {
+    color: #102331;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#updates_footer {
+    color: #102331;
+    background-color: #FFFAEE;
+}
+/* #updates_footer h4 {
+    color: #102331;
+}
+#updates_footer input {
+    color: #102331;
+}
+#updates_footer p {
+    color: #102331;
+} */

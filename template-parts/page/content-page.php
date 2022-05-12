@@ -15,8 +15,8 @@ $about_the_book_dropdown = $fields['about_the_book_dropdown'];
 $about_the_author = $fields['about_the_author'];
 $about_the_author_dropdown = $fields['about_the_author_dropdown'];
 $dropdown = $fields['dropdown'];
+get_template_part('index', 'top');
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<div id="about-wrap" class="about_section">
