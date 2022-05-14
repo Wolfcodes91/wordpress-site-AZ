@@ -46,10 +46,12 @@ get_template_part('index', 'top');
 					<?php the_post_thumbnail(); ?>
 				</div>
 			</div>
-			</div>
 		</div>
-	</div>		
+	</div>
+</div>		
 </div><!-- .entry-content -->
+<div id="banner_block">
+</div>
 </article><!-- #post-<?php the_ID(); ?> -->
 
 

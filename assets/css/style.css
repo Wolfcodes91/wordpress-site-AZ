@@ -1059,13 +1059,10 @@ a:hover {
 #updates_footer {
     color: #102331;
     background-color: #FFFAEE;
+    padding-bottom: 70px;
 }
-/* #updates_footer h4 {
-    color: #102331;
+
+#banner_block {
+    background-color: #102331;
+    padding: 90px;
 }
-#updates_footer input {
-    color: #102331;
-}
-#updates_footer p {
-    color: #102331;
-} */
