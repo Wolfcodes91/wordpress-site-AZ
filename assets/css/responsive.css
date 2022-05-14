@@ -325,4 +325,10 @@
     .newsletter_wrap.v2 {
         margin-top: 20px;
     }
+    #banner_block {
+        padding: 40px;
+    }
+    #updates_footer {
+        padding-bottom: 0px;
+    }
 }
