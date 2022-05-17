@@ -35,7 +35,8 @@
 	</style>
     
 </head>
-<body>
+<body <?php body_class(); ?>>
+
  <!-- Preloader Start -->
  <div class="proloader">
         <div class="loader_34">

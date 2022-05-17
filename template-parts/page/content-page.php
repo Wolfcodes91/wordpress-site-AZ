@@ -50,8 +50,8 @@ get_template_part('index', 'top');
 	</div>
 </div>		
 </div><!-- .entry-content -->
-<div id="banner_block">
-</div>
+<!-- <div id="banner_block">
+</div> -->
 </article><!-- #post-<?php the_ID(); ?> -->
 
 

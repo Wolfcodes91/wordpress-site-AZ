@@ -14,6 +14,7 @@
 $shops = get_field('shops', 'option');
 ?>
 	<!-- Footer section starts -->
+	<?php if (is_front_page()): ?>
 	<div class="row" id="updates_footer">
 		<div class="col-md-10 offset-md-1">
 			<div id="mc_embed_signup" class="newsletter_wrap">
@@ -22,7 +23,8 @@ $shops = get_field('shops', 'option');
 			</div>
 			<!--End mc_embed_signup-->
 		</div>
-	</div>			
+	</div>	
+	<?php endif; ?>	
 	<div id="preorder_wrap" class="footer_section">
 		<div class="container">
 			<?php 

@@ -234,6 +234,11 @@
         margin-bottom: 40px;
     }
 
+    .about_text_centered {
+        margin-left: 0;
+        width: initial;
+    }
+
     .author_bio {
         margin-top: 30px;
     }
@@ -296,7 +301,7 @@
     } */
 
     .newsletter_wrap {
-        margin: 60px 0 120px;
+        margin: 60px 0 80px;
     }
 
     .copyright_text p {

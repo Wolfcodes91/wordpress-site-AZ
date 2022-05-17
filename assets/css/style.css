@@ -793,6 +793,9 @@ a:hover {
 ---------------------------------*/
 .about_section {
     background: #FFFAEE;
+    padding: 60px 0 90px;
+}
+.home .about_section {
     padding: 130px 0 90px;
 }
 
@@ -1059,7 +1062,7 @@ a:hover {
 #updates_footer {
     color: #102331;
     background-color: #FFFAEE;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 #banner_block {
