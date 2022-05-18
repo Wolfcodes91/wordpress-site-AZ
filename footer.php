@@ -17,7 +17,7 @@ $shops = get_field('shops', 'option');
 	<?php if (is_front_page()): ?>
 	<div class="row" id="updates_footer">
 		<div class="col-md-10 offset-md-1">
-			<div id="mc_embed_signup" class="newsletter_wrap">
+			<div id="mc_embed_signup" class="newsletter_wrap" class='email'>
 				<h4>Receive Updates</h4>
 				<?= do_shortcode('[contact-form-7 id="44" title="Contact form 1"]'); ?>
 			</div>

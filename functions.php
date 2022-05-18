@@ -747,8 +747,6 @@ function order_button_shortcode() {
 	</div>';
    }
 
-
-
 add_shortcode( 'order_button', 'order_button_shortcode' );
 	
 add_theme_support( 'post-thumbnails' );

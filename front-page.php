@@ -85,35 +85,7 @@ $about_the_author_dropdown = $fields['about_the_author_dropdown'];
 							<p>He has been a senior executive in the technology industry, always on the leading edge of innovation.</p> -->
 							<div id="collapseBio" class="collapse">
 							<?= $about_the_author_dropdown ?>
-								<!-- <p>Business career highlights include the following:</p>
-								<ul>
-									<li>
-										<p>• Part of the team that launched one of the first home video businesses in the 1980s.</p>
-									</li>
-									<li>
-										<p>• While a consulting partner at PWC, 
-											he launched a worldwide knowledge network with email and information services, a precursor to the internet. 
-											Featured in the press at the time, Tom Peters, management guru, 
-											featured Andy’s work in his books and newsletter, calling it "the most important story I’ve ever written."</p>
-									</li>
-									<li>
-										<p>• Andy was a managing director at one of the first and most successful incubator/venture firms in history—idealab, 
-											creator of over 100 companies with more than 10 IPOs</p>
-									</li>
-									<li>
-										<p>• As a senior managing director at the largest tech services company in the world—Accenture—Andy launched Accenture Digital 
-											which eventually grew to represent half of its revenue.</p>
-									</li>
-									<li>
-										<p>• Andy is the 3rd CEO of frog in its history. 
-											Frog is a 50 year old iconic design firm famous for its work for Apple, Disney, Sony and other leading brands. 
-											While managing one of the largest design and innovation firms in the world, 
-											Andy began to write JOURNEY, drawing upon his recent personal life experience.</p>
-									</li>
-								</ul>
-								<p>Andy was an English major at Haverford College and was one of the youngest recipients of a post-grad Thomas Watson Fellowship, 
-									during which he travelled with circuses in Europe, writing about the experience.</p>
-								<p>He also received a master’s degree from New York University Business School.</p> -->
+							
 							</div>
 							<a class="read_more" href="#" data-toggle="collapse" data-target="#collapseBio" aria-expanded="false" aria-controls="collapseBio">+read more</a>
 						</div>
@@ -121,40 +93,6 @@ $about_the_author_dropdown = $fields['about_the_author_dropdown'];
 				</div>
 			</div>
 		</div>
-			<!-- Author Ends -->
-			<!-- Magazine starts -->
-		<!-- <div id="press_wrap" class="magazine_section">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="magazine_item">
-							<img src="wp-content/themes/twentyseventeen/assets/images/myt.png" alt="Image">
-							<p>“Lorem ipsum this is a quote from the press about the book Andrew Zimmerman wrote”
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="magazine_item">
-							<img src="wp-content/themes/twentyseventeen/assets/images/gq.png" alt="Image">
-							<p>“Lorem ipsum this is a quote from the press about the book Andrew Zimmerman wrote”
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="magazine_item">
-							<img src="wp-content/themes/twentyseventeen/assets/images/forbes.png" alt="Image">
-							<p>“Lorem ipsum this is a quote from the press about the book Andrew Zimmerman wrote”
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- Magazine ends -->
-		<!-- Instagram starts -->
-
-	
-		
 			<?php get_footer(); ?>
 
 		<?php
