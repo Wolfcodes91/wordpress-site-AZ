@@ -1069,3 +1069,7 @@ a:hover {
     background-color: #102331;
     padding: 90px;
 }
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: transparent;
+}
