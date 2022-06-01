@@ -28,15 +28,15 @@ get_template_part('index', 'top');
 	
 			<!-- About 1 -->
 			<div class="container">
-				<div class="row">
+				<div class="row <?= has_post_thumbnail() ? 'about_text' : 'about_text_centered'?>">
 					<div class="col-lg-6 col-md-6">	
-					<div class=<?= has_post_thumbnail() ? 'about_text' : 'about_text_centered'?>>
+					<!-- <div > -->
 					<?php the_title( '<h3 class="about_text">', '</h3>' ); ?>
 					<?= the_content(); ?>
 					<?php if (!empty($dropdown)) : ?>	
 					<div id="collapseExample" class="collapse">			
 							<?= $dropdown ?>
-					</div>
+					<!-- </div> -->
 					<a href="#" class="read_more" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">+read more</a>
 					<?php endif; ?>
 				</div>

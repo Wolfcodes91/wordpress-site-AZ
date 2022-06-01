@@ -839,11 +839,21 @@ a:hover {
     color: #102331;
     margin-bottom: 25px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    width: 60vmin;
+    /* width: 60vmin; */
     line-height: 1.5;
     margin-left: 100px;
+}
+
+.about_text_centered .col-lg-6.col-md-6:nth-of-type(2){
+    display: none;
+}
+
+.about_text_centered .col-lg-6.col-md-6:nth-of-type(1){
+    max-width: initial;
+    width: 60vmin;
 }
 
 /*--------------------------------
@@ -1073,3 +1083,24 @@ a:hover {
 .wpcf7 form.sent .wpcf7-response-output {
     border-color: transparent;
 }
+
+#NFTform input{
+    width: 440px;
+    margin: 10px 0;
+}
+
+#NFTbutton {
+    font-size: 18px;
+    font-family: "SweetSans Bold";
+    color: #102331;
+    background: transparent;
+    border: 2px solid #102331;
+    border-radius: 50px;
+    padding: 7px 35px 4px;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    width: 162px !important;
+}
+
