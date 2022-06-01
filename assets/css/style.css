@@ -1085,7 +1085,11 @@ a:hover {
 }
 
 #NFTform input{
-    width: 440px;
+    width: 44vmin;
+    margin: 10px 0;
+}
+#NFTform textarea{
+    width: 44vmin;
     margin: 10px 0;
 }
 
