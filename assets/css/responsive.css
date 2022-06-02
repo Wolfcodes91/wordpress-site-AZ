@@ -336,4 +336,18 @@
     #updates_footer {
         padding-bottom: 0px;
     }
+    #NFTform {
+        margin-top: -12vmin;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #NFTform input{
+        width: 68vmin;
+    }
+    #NFTform textarea{
+        width: 68vmin;
+    }
 }
